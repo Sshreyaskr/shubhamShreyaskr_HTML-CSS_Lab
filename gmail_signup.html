@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Setup</title>
+    <style>
+        h2 {
+            text-align: center;
+            color: black;
+            right: 20px;
+        }
+
+        input {            
+            border-radius: 4px;
+            padding-left: 10px;
+            width: 270px;
+            min-width: 100px;
+            height: 30px;
+            margin-bottom: 10px;
+            background-color: whitesmoke;
+        }
+
+        input:focus {
+            background-color: steelblue;
+            opacity: 0.35;
+            outline: none;
+        }
+
+        button {
+            margin: 20px;
+            width: 80px;
+            border-radius: 4px;
+            height: 30px;
+            color: white;
+            font-size: 18px;
+            border: none;
+            background-color: rgb(175, 102, 243);
+        }
+
+        .login {
+            color: white;
+            position: fixed;
+            text-align: left;
+            border-radius: 5px;
+            vertical-align: middle;
+            background: transparent;
+            top: 20%;
+            left: 550px;
+            min-width: 350px;
+            line-height: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 40px;
+            border: 1px solid white;
+        }
+
+        #myvideo {
+            width: 100%;
+            height: auto;
+            position: fixed;
+            opacity: 55%;
+        }
+
+        /* .hjsj{
+            border: 2px solid wheat;
+            left: 30px;
+            margin-left: 10px;
+            padding-left: 10px;
+        } */
+    </style>
+</head>
+
+<body>
+    <video muted autoplay loop id="myvideo">
+        <source src="Background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="login">
+
+        <form action="problem_statement(2).html" class="hjsj">
+            <h2>Create Gmail Account</h2>
+            <!--The required at the end of an input tag gives a msg to the user-->
+            <input type="text" id="u_name" placeholder="Full Name" required><br>
+
+            <input type="text" id="u_pass" placeholder="Contact Number" minlength="8" required><br>
+
+            <input type="text" id="u_pass" placeholder="Enter Email Id" minlength="8" required><br>
+
+            <p></p>
+
+            <button class="button">Reset</button>
+            <button class="button">Submit</button>
+
+        </form>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
